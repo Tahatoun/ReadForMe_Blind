@@ -12,7 +12,7 @@
 
         <ScrollView
 
-            android:background="@color/colorAccent"
+            android:background="@color/colorWhite"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -20,7 +20,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_gravity="center">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -62,8 +63,8 @@
                     android:inputType="textPersonName"
                     android:padding="10dp"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorWhite"
-                    android:textColorHint="@color/colorWhite" />
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
 
                 <EditText
                     android:id="@+id/editTextDescription"
@@ -78,8 +79,8 @@
                     android:inputType="text"
                     android:padding="10dp"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorWhite"
-                    android:textColorHint="@color/colorWhite" />
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
 
                 <MultiAutoCompleteTextView
                     android:id="@+id/multiAutoCompleteTextView"
@@ -100,20 +101,21 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
 
                     <Button
                         android:id="@+id/cancelButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+
                         android:backgroundTint="@color/colorPrimary"
                         android:background="@color/colorPrimary"
                         android:contentDescription="@string/cancel"
-                        android:drawableBottom="@drawable/crop__ic_cancel"
+                        android:drawableBottom="@drawable/cancel_vector"
                         android:text="@string/cancel"
-                        android:textColor="@color/colorWhite"
-                        app:srcCompat="@drawable/crop__ic_cancel" />
+                        android:textColor="@color/colorWhite" />
 
                     <Button
                         android:id="@+id/doneButton"
@@ -126,7 +128,7 @@
                         android:drawableBottom="@drawable/crop__ic_done"
                         android:text="@string/Done"
                         android:textColor="@color/colorWhite"
-                        app:srcCompat="@drawable/crop__ic_done" />
+                        />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

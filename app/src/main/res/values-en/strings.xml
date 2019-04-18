@@ -4,12 +4,14 @@
     <!-- login -->
     <string name="welcome">Welcome !</string>
     <string name="next">NEXT</string>
+    <string name="signIn">Sign In</string>
     <string name="login_name">Enter your Email</string>
     <string name="login_pass">Password</string>
     <string name="forgot_password">FORGOT PASSWORD?</string>
     <string name="newUser">NEW USER ?</string>
     <string name="signInHere">Sign up here !</string>
     <!-- sign up -->
+    <string name="signup">Sign up</string>
     <string name="createAccount">Create New Account</string>
     <string name="addPicture">Add picture</string>
     <string name="firstName">First Name</string>
@@ -193,4 +195,7 @@
     <string name="shuffle">Shuffle</string>
     <string name="previous">Previous</string>
     <string name="repeat">Repeat</string>
+    <string name = "files">My files</string>
+    <string name = "upload">Upload a file</string>
+
 </resources>

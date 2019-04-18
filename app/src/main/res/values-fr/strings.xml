@@ -6,10 +6,12 @@
     <string name="next">"PROCHAIN"</string>
     <string name="login_name">"Entrer votre Email"</string>
     <string name="login_pass">"Mot de passe"</string>
+    <string name="signIn">Se connecter</string>
     <string name="forgot_password">"MOT DE PASSE OUBLIÉ?"</string>
     <string name="newUser">"NOUVEAU UTILISATEUR ?"</string>
-    <string name="signInHere">"Inscrivez-vous ici!"</string>
+    <string name="signInHere">"inscrivez vous ici !"</string>
     <!-- sign up -->
+    <string name="signup">"S'inscrire"</string>
     <string name="createAccount">"Créer un nouveau compte"</string>
     <string name="addPicture">"Ajouter une image"</string>
     <string name="firstName">"Prénom"</string>
@@ -193,4 +195,6 @@
     <string name="shuffle">"Shuffle"</string>
     <string name="previous">"précédent"</string>
     <string name="repeat">"Répéter"</string>
+    <string name = "files">Mes fichiers</string>
+    <string name = "upload">Soumettre un fichier</string>
 </resources>

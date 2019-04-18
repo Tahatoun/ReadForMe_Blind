@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:layout_margin="0dp"
         android:layout_marginTop="0dp"
-        android:background="@color/colorAccent"
+        android:background="@color/colorWhite"
         android:orientation="vertical">
 
         <ScrollView
@@ -21,9 +21,11 @@
             android:layout_height="match_parent">
 
             <LinearLayout
+                android:layout_marginTop="24dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -39,6 +41,12 @@
                         android:gravity="center_horizontal"
                         android:orientation="vertical">
 
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="150dp"
+                            android:layout_height="170dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/logo_" />
                     </LinearLayout>
 
                     <TextView
@@ -47,9 +55,12 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
                         android:text="@string/welcome"
-                        android:textColor="@color/colorWhite"
+                        android:contentDescription="@string/welcome"
+                        android:textColor="@color/colorBlack"
                         android:textSize="30sp"
-                        app:font="@{`Roboto`}" />
+                        app:font="@{`Roboto`}"
+                        android:accessibilityTraversalBefore="@id/editTextLogin"
+                        />
 
                     <EditText
                         android:id="@+id/editTextLogin"
@@ -65,8 +76,9 @@
                         android:inputType="textPersonName"
                         android:padding="10dp"
                         android:text="@{blind.email}"
-                        android:textColor="@color/colorWhite"
-                        android:textColorHint="@color/colorWhite" />
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        />
 
                     <EditText
                         android:id="@+id/editTextPassword"
@@ -83,8 +95,9 @@
                         android:padding="10dp"
                         android:text="@{blind.password}"
                         android:textAllCaps="true"
-                        android:textColor="@color/colorWhite"
-                        android:textColorHint="@color/colorWhite" />
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:accessibilityTraversalAfter="@id/editTextLogin"/>
 
                     <com.dd.processbutton.iml.ActionProcessButton
                         android:id="@+id/signinButton"
@@ -94,7 +107,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
                         android:layout_marginTop="20dp"
-                        android:text="@string/login_name"
+                        android:text="@string/signIn"
                         android:contentDescription="@string/prassLogin"
                         android:textColor="@android:color/white"
                         android:textSize="18sp"
@@ -105,7 +118,8 @@
                         app:pb_colorProgress="@color/purple_progress"
                         app:pb_textComplete="@string/logged_in"
                         app:pb_textError="@string/error_log_in"
-                        app:pb_textProgress="@string/ctoserver" />
+                        app:pb_textProgress="@string/ctoserver"
+                        android:accessibilityTraversalAfter="@id/editTextPassword"/>
 
                 </LinearLayout>
 
@@ -140,7 +154,8 @@
                             android:text="@string/newUser"
                             android:contentDescription="@string/newUser"
                             android:textColor="@color/colorLine"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:accessibilityTraversalAfter="@id/signinButton"/>
 
                         <TextView
                             android:id="@+id/textViewSignup"
@@ -150,7 +165,8 @@
                             android:text="@string/signInHere"
                             android:contentDescription="@string/signInHere"
                             android:textColor="@color/colorPrimary"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:accessibilityTraversalAfter="@id/textView3"/>
                     </LinearLayout>
 
                 </LinearLayout>

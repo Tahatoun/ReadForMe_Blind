@@ -30,7 +30,8 @@
                 android:layout_weight="0"
                 android:src="@drawable/cover"
                 app:civ_border_color="#fff"
-                app:civ_border_width="2dp" />
+                app:civ_border_width="2dp"
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -79,7 +80,9 @@
                 app:dots_primary_color="@color/colorAccent"
                 app:dots_secondary_color="@color/colorLine"
                 app:icon_size="22dp"
-                app:icon_type="heart" />
+                app:icon_type="heart"
+                android:contentDescription="@string/likes"
+                android:importantForAccessibility="no"/>
 
         </LinearLayout>
 
@@ -114,7 +117,8 @@
             android:padding="8dp"
             android:text="@string/description"
             android:textColor="#666"
-            android:textSize="14dp" />
+            android:textSize="14dp"
+            android:importantForAccessibility="no"/>
 
     </LinearLayout>
 </android.support.v7.widget.CardView>

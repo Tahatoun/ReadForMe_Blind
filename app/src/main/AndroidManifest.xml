@@ -34,7 +34,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,11 +44,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".MyFilesActivity" />
-        <activity android:name=".FilesActivity" />
+        <activity android:name=".SignUpActivity"
+            android:parentActivityName=".LoginActivity"
+            android:label="@string/signup" />
+        <activity android:name=".MyFilesActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/my_files"/>
+        <activity android:name=".FilesActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/files"/>
         <activity android:name=".FileDetailsActivity" />
-        <activity android:name=".UploadFileActivity"></activity>
+        <activity android:name=".UploadFileActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/upload"></activity>
 
         <service
             android:name=".UploadFileService"

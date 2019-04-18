@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorWhite"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
@@ -19,17 +19,18 @@
             android:layout_height="fill_parent"
             android:paddingTop="12dp"
             android:paddingBottom="20dp"
-            android:scrollbarStyle="outsideOverlay" >
+            android:scrollbarStyle="outsideOverlay">
 
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:layout_gravity="center">
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -37,12 +38,15 @@
                         android:layout_margin="10dp"
                         android:layout_weight="0"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        
+                        >
 
                         <com.balysv.materialripple.MaterialRippleLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:padding="5dp">
+                            android:padding="5dp"
+                            >
 
                             <ImageView
                                 android:id="@+id/myFiles"
@@ -51,7 +55,7 @@
                                 android:clickable="true"
                                 android:contentDescription="@string/my_files"
                                 android:focusable="true"
-                                android:tint="@color/colorWhite"
+                                android:tint="@color/colorPrimary"
                                 app:srcCompat="@drawable/ic_insert_drive_file_black_24dp" />
                         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -59,9 +63,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/my_files"
-                            android:textColor="@android:color/background_light"
+                            android:textColor="@color/colorPrimary"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:importantForAccessibility="no"/>
 
                     </LinearLayout>
 
@@ -72,7 +77,8 @@
                         android:layout_margin="10dp"
                         android:layout_weight="0"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        >
 
                         <com.balysv.materialripple.MaterialRippleLayout
 
@@ -87,7 +93,7 @@
                                 android:clickable="true"
                                 android:contentDescription="@string/new_file"
                                 android:focusable="true"
-                                android:tint="@color/colorWhite"
+                                android:tint="@color/colorPrimary"
                                 app:srcCompat="@mipmap/ic_people_white" />
                         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -96,9 +102,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/new_file"
-                            android:textColor="@android:color/background_light"
+                            android:textColor="@color/colorPrimary"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:importantForAccessibility="no"/>
 
                     </LinearLayout>
 
@@ -107,7 +114,8 @@
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:layout_marginTop="16dp">
 
                     <LinearLayout
 
@@ -131,7 +139,7 @@
                                 android:clickable="true"
                                 android:contentDescription="@string/all_files"
                                 android:focusable="true"
-                                android:tint="@color/colorWhite"
+                                android:tint="@color/colorPrimary"
                                 app:srcCompat="@mipmap/ic_people_white" />
                         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -140,9 +148,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/all_files"
-                            android:textColor="@android:color/background_light"
+                            android:textColor="@color/colorPrimary"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:importantForAccessibility="no"/>
 
                     </LinearLayout>
 
@@ -168,7 +177,7 @@
                                 android:clickable="true"
                                 android:contentDescription="@string/my_profile"
                                 android:focusable="true"
-                                android:tint="@color/colorWhite"
+                                android:tint="@color/colorPrimary"
                                 app:srcCompat="@drawable/ic_person_pin_black_24dp" />
                         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -177,9 +186,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/my_profile"
-                            android:textColor="@android:color/background_light"
+                            android:textColor="@color/colorPrimary"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:importantForAccessibility="no"/>
 
                     </LinearLayout>
 

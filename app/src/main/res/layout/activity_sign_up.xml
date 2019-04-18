@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:layout_margin="0dp"
         android:layout_marginTop="0dp"
-        android:background="@color/colorAccent"
+        android:background="@color/colorWhite"
         android:orientation="vertical">
 
         <LinearLayout
@@ -45,8 +45,8 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="4"
-            android:paddingBottom="20dp"
             android:paddingTop="12dp"
+            android:paddingBottom="20dp"
             android:scrollbarStyle="outsideOverlay">
 
             <LinearLayout
@@ -67,9 +67,10 @@
                     android:hint="@string/fist_name"
                     android:inputType="textPersonName"
                     android:padding="10dp"
-                    android:textColor="@color/colorWhite"
-                    android:textColorHint="@color/colorWhite"
-                    android:visibility="visible" />
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:visibility="visible"
+                    />
 
                 <EditText
                     android:id="@+id/editTextLastName"
@@ -82,8 +83,8 @@
                     android:hint="@string/last_name"
                     android:inputType="textPersonName"
                     android:padding="10dp"
-                    android:textColor="@color/colorWhite"
-                    android:textColorHint="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
                     android:visibility="visible" />
 
                 <EditText
@@ -97,8 +98,8 @@
                     android:hint="@string/email"
                     android:inputType="textEmailAddress"
                     android:padding="10dp"
-                    android:textColor="@color/colorWhite"
-                    android:textColorHint="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
                     android:textSize="22sp" />
 
                 <EditText
@@ -112,8 +113,8 @@
                     android:hint="@string/password"
                     android:inputType="textWebPassword"
                     android:padding="10dp"
-                    android:textColor="@color/colorWhite"
-                    android:textColorHint="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
                     android:textSize="22sp" />
 
                 <EditText
@@ -128,8 +129,8 @@
                     android:hint="@string/code"
                     android:inputType="textPersonName"
                     android:padding="10dp"
-                    android:textColor="@color/colorWhite"
-                    android:textColorHint="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
                     android:visibility="visible" />
             </LinearLayout>
         </ScrollView>

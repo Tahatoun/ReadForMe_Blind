@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:layout_margin="0dp"
         android:layout_marginTop="0dp"
-        android:background="@color/colorAccent"
+        android:background="@color/colorBack"
         android:orientation="vertical"
         >
 
@@ -123,7 +123,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:contentDescription="@string/shuffle"
-                    android:tint="@color/colorWhite"
+                    android:tint="@color/colorBlack"
                     app:srcCompat="@drawable/ic_shuffle_black_24dp" />
 
                 <ImageView
@@ -132,7 +132,7 @@
                     android:layout_height="40dp"
                     android:layout_weight="1"
                     android:contentDescription="@string/previous"
-                    android:tint="@color/colorWhite"
+                    android:tint="@color/colorBlack"
                     app:srcCompat="@drawable/ic_fast_rewind_black_24dp" />
 
                 <ImageView
@@ -150,7 +150,7 @@
                     android:layout_height="40dp"
                     android:layout_weight="1"
                     android:contentDescription="@string/next"
-                    android:tint="@color/colorWhite"
+                    android:tint="@color/colorBlack"
                     app:srcCompat="@drawable/ic_fast_forward_black_24dp" />
 
                 <ImageView
@@ -159,7 +159,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:contentDescription="@string/repeat"
-                    android:tint="@color/colorWhite"
+                    android:tint="@color/colorBlack"
                     app:srcCompat="@drawable/ic_repeat_black_24dp" />
             </LinearLayout>
 

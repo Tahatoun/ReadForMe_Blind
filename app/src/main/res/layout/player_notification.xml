@@ -2,7 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorAccent"
+    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
     <LinearLayout
@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            app:srcCompat="@drawable/ic_close" />
+            />
     </LinearLayout>
 
     <TextView
@@ -47,7 +47,8 @@
             android:layout_alignEnd="@+id/textViewArtist"
             android:layout_below="@+id/textViewArtist"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_media_previous" />
+            app:srcCompat="@android:drawable/ic_media_previous"
+            android:contentDescription="@string/previous"/>
 
         <ImageView
             android:id="@+id/imageViewPlayNot"
@@ -55,7 +56,8 @@
             android:layout_height="40dp"
             android:layout_alignTop="@+id/imageViewForwNot"
             android:layout_toEndOf="@+id/imageViewBackNot"
-            app:srcCompat="@android:drawable/ic_media_play" />
+            app:srcCompat="@android:drawable/ic_media_play"
+            android:contentDescription="@string/Play"/>
 
         <ImageView
             android:id="@+id/imageViewForwNot"
@@ -64,7 +66,8 @@
             android:layout_below="@+id/textViewArtist"
             android:layout_toEndOf="@+id/imageViewPlayNot"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_media_next" />
+            app:srcCompat="@android:drawable/ic_media_next"
+            android:contentDescription="@string/next"/>
 
     </LinearLayout>
 

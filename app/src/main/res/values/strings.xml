@@ -9,7 +9,9 @@
     <string name="forgot_password">FORGOT PASSWORD?</string>
     <string name="newUser">NEW USER ?</string>
     <string name="signInHere">Sign up here !</string>
+    <string name="signIn">Sign In</string>
     <!-- sign up -->
+    <string name="signup">Sign up</string>
     <string name="createAccount">Create New Account</string>
     <string name="addPicture">Add picture</string>
     <string name="firstName">First Name</string>
@@ -194,4 +196,7 @@
     <string name="previous">Previous</string>
     <string name="repeat">Repeat</string>
     <string name="code">organisme code</string>
+
+    <string name="files">My files</string>
+    <string name="upload">upload a file</string>
 </resources>

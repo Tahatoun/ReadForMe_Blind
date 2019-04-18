@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#D54F58</color>
     <color name="colorPrimaryDark">#113F59</color>
+    <color name="colorPrimaryDark1">#a83e43</color>
     <color name="colorAccent">#177A96</color>
     <color name="colorBack">#f6f9fa</color>
     <color name="colorLine">#7c2836</color>
@@ -12,6 +13,7 @@
 
     <color name="radio_button_selected_color">#ff33b5e5</color>
     <color name="radio_button_unselected_color">@android:color/transparent</color>
+    <color name="colorBlack">#000000</color>
 
     <color name="sc_tint_color" >#ff33b5</color>
     <color name="suggestionColorBg" >#000019</color>
