@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity">
+    <data>
+        <variable name="blind" type="ensias.readforme_blind.model.Blind"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/welcome"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="30sp"
+                        app:font="@{`Roboto`}" />
+
+                    <EditText
+                        android:id="@+id/editTextLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext_bg"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/login_name"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:text="@{blind.email}"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite" />
+
+                    <EditText
+                        android:id="@+id/editTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edittext_bg"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/login_pass"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:text="@{blind.password}"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite" />
+
+                    <com.dd.processbutton.iml.ActionProcessButton
+                        android:id="@+id/signinButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/login_name"
+                        android:contentDescription="@string/prassLogin"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        app:pb_colorComplete="@color/colorLine"
+                        app:pb_colorError="@color/colorLineLight"
+                        app:pb_colorNormal="@color/colorPrimary"
+                        app:pb_colorPressed="@color/colorLine"
+                        app:pb_colorProgress="@color/purple_progress"
+                        app:pb_textComplete="@string/logged_in"
+                        app:pb_textError="@string/error_log_in"
+                        app:pb_textProgress="@string/ctoserver" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="52dp"
+                        android:layout_marginRight="52dp"
+                        android:background="@color/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="@string/newUser"
+                            android:contentDescription="@string/newUser"
+                            android:textColor="@color/colorLine"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textViewSignup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="@string/signInHere"
+                            android:contentDescription="@string/signInHere"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

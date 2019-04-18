@@ -1,0 +1,27 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <item
+        android:id="@+id/action_search"
+        android:icon="@mipmap/ic_search"
+        android:title="@string/action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/newFileItem"
+        android:title="@string/new_files_menu" />
+    <item
+        android:id="@+id/allFilesItem"
+        android:title="@string/all_files_menu" />
+    <item
+        android:id="@+id/myFilesItem"
+        android:title="@string/my_files_menu" />
+    <item
+        android:id="@+id/myProfileItem"
+        android:title="@string/my_profile_menu" />
+    <item
+        android:id="@+id/logoutItem"
+        android:title="@string/logout_menu" />
+</menu>

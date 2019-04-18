@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D54F58</color>
+    <color name="colorPrimaryDark">#113F59</color>
+    <color name="colorAccent">#177A96</color>
+    <color name="colorBack">#f6f9fa</color>
+    <color name="colorLine">#7c2836</color>
+    <color name="colorLineLight">#858e9b</color>
+    <color name="colorPlaylistItemPrimary">#d5d7e7</color>
+    <color name="colorPlaylistItemSecondary">#bec2d3</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+
+    <color name="sc_tint_color" >#ff33b5</color>
+    <color name="suggestionColorBg" >#000019</color>
+    <color name="sc_checked_text_color" >#ff3111</color>
+    <color name="cardview_shadow_start_color" />
+    <color name="grid_line" />
+</resources>

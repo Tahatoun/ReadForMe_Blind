@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UploadFileActivity">
+    <data>
+
+    </data>
+
+
+
+
+        <ScrollView
+
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingEnd="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingStart="15dp">
+
+                    <Button
+                        android:id="@+id/importFile"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="4"
+                        android:contentDescription="@string/import_file"
+                        android:text="@string/import_file" />
+
+                    <TextView
+                        android:id="@+id/fileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:contentDescription="@string/no_file"
+                        android:text="@string/no_file" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="@string/file_tilte"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/editTextDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="@string/file_description"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/multiAutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="@string/file_category"
+                    android:padding="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cancelButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:background="@color/colorPrimary"
+                        android:contentDescription="@string/cancel"
+                        android:drawableBottom="@drawable/crop__ic_cancel"
+                        android:text="@string/cancel"
+                        android:textColor="@color/colorWhite"
+                        app:srcCompat="@drawable/crop__ic_cancel" />
+
+                    <Button
+                        android:id="@+id/doneButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/holo_green_light"
+                        android:backgroundTint="@color/holo_green_light"
+                        android:contentDescription="@string/Done"
+                        android:drawableBottom="@drawable/crop__ic_done"
+                        android:text="@string/Done"
+                        android:textColor="@color/colorWhite"
+                        app:srcCompat="@drawable/crop__ic_done" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+</layout>

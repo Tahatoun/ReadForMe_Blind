@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="12dp"
+            android:paddingBottom="20dp"
+            android:scrollbarStyle="outsideOverlay" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/myFiles"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:clickable="true"
+                                android:contentDescription="@string/my_files"
+                                android:focusable="true"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/ic_insert_drive_file_black_24dp" />
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/my_files"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/newFile"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:clickable="true"
+                                android:contentDescription="@string/new_file"
+                                android:focusable="true"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@mipmap/ic_people_white" />
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/new_file"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/allFiles"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:clickable="true"
+                                android:contentDescription="@string/all_files"
+                                android:focusable="true"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@mipmap/ic_people_white" />
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/all_files"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/myProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:clickable="true"
+                                android:contentDescription="@string/my_profile"
+                                android:focusable="true"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/ic_person_pin_black_24dp" />
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/my_profile"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>
