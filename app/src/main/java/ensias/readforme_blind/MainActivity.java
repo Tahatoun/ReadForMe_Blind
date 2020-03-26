@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ActivityMainBinding binding;
     Call<Blind> profileCall;
     Blind blind;
+	Blind blind2;
     Activity activity;
     Auth authManager;
     @Override
