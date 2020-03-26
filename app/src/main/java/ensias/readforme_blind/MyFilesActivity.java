@@ -38,7 +38,7 @@ public class MyFilesActivity extends AppCompatActivity {
     Call<Blind> profileCall2;
     ArrayList<File> posts;
     Home home;
-	Home home2;
+	Home home4;
     Blind blind;
     FileAdapter adapter;
     Activity activity;
